@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(224, 220, 220);
+    box-sizing: border-box;
+}
+
+section{
+    height: 100vh;
+    background-color: rgb(110, 16, 16);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    padding: 4rem;
+}
+
+section h1{
+    font-size: 5rem;
+    text-shadow: 3px 3px 3px rgb(17, 8, 8);
+    font-weight: 800;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    /* border: 1px solid red; */
+    flex: 1;
+
+}
+
+.container div{
+    padding: 3rem;
+    border: .5rem solid rgb(5, 0, 8);
+    font-size: 2.5rem;
+    color: rgb(16, 167, 144);
+    height: fit-content;
+    border-radius: 1rem;
+    font-weight: 800;
+    transition: all ease-in-out .3s;
+}
+
+
+.drumw{
+    background-image: url('images/tom1.jpeg');
+}
+
+.druma{
+    background-image: url('images/tom2.jpeg');
+}
+
+
+.drums{
+    background-image: url('images/tom3.jpeg');
+}
+
+
+.drumd{
+    background-image: url('images/tom4.jpeg');
+}
+
+
+.drumj{
+    background-image: url('images/snare.jpeg');
+}
+
+
+.drumk{
+    background-image: url('images/crash.jpeg');
+}
+
+
+.druml{
+    background-image: url('images/kick.jpeg');
+}
+
+.animate{
+    padding: 2rem !important ;
+    transition: all ease-in-out .3s;
+}
+footer {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  color: white; /* adjust to your theme */
+}
+
+.my-name {
+  display: inline-block;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ff004c;   /* bright pink */
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  animation-delay: 1s; /* wait 1 sec then fade in */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
